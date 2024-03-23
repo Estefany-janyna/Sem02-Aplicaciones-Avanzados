@@ -1,0 +1,25 @@
+﻿<Window x:Class="Sem02.ReporteSalida"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sem02"
+        mc:Ignorable="d"
+        Title="ReporteSalida" Height="450" Width="800">
+    <Grid>
+        <Grid Margin="20">
+            <DataGrid x:Name="salidasDataGrid" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}"/>
+                    <DataGridTextColumn Header="Peso" Binding="{Binding Peso}"/>
+                    <DataGridTextColumn Header="Tipo de Auto" Binding="{Binding TipoAuto}"/>
+                    <DataGridTextColumn Header="Nombre del Transportista" Binding="{Binding NombreTransportista}"/>
+                    <DataGridTextColumn Header="Peso de Ingreso" Binding="{Binding PesoIngreso}"/>
+                    <DataGridTextColumn Header="Peso de Salida" Binding="{Binding PesoSalida}"/>
+                    <DataGridTextColumn Header="Fecha y Hora" Binding="{Binding FechaHora}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+    </Grid>
+</Window>
